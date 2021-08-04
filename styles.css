@@ -5,6 +5,138 @@
 }
 
 :root{
-    --title-color: #322153;
-    --primary-color: #34cb79;
+    --primary-very-dark-blue: hsl(233, 47%, 7%);
+    --primary-desaturated-dark-blue: hsl(244, 38%, 16%);
+    --primary-soft-violet: hsl(277, 64%, 61%);
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-main-paragraph: hsla(0, 0%, 100%, 0.75);
+    --neutral-stat-headings: hsla(0, 0%, 100%, 0.6);
+}
+
+html {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--primary-very-dark-blue);
+    color: var(--neutral-white);
+    font-size: 15px;
+}
+
+h1 {
+    padding: 10vh 25px 25px;
+    font-size: 1.7rem;
+}
+
+h2 {
+    padding: 10px;
+}
+
+p {
+    color: var(--neutral-main-paragraph);
+    line-height: 1.5rem;
+}
+
+main, .modal {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+main > div > section:first-child {
+    width: 100%;
+    height: 230px;
+    background-image: url("./images/image-header-mobile.jpg");
+    background-size: cover;
+}
+
+h1 > span {
+    color: var(--primary-soft-violet);
+}
+
+.container-static {
+    padding-bottom: 35px;
+}
+
+section > p  {
+    padding: 5vh 25px 30px;
+}
+
+section > div {
+    text-transform: uppercase;
+}
+
+.container-static div:first-of-type > h2 {
+    text-transform: lowercase;
+}
+
+div > p {
+    color: var(--neutral-stat-headings);
+    font-size: 12px;
+}
+
+
+@media (min-width: 768px) {
+    main {
+        height: 100vh;
+    }
+
+
+    h1{
+        padding: 5vh 0 25px 5vw;
+        text-align: left;
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+
+    h2 {
+        padding-left: 0;
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 2.4rem;
+    }
+
+    .modal {
+        width: 75vw;
+        height: 70vh;
+        margin: auto;
+
+        flex-direction: row-reverse;
+
+        justify-content: center;
+        align-items: center;
+
+        background-color: var(--primary-desaturated-dark-blue);
+
+        border-radius: 1.5rem;
+    }
+
+    .container{
+        margin: 5vh 7vw 2.5rem 0;
+    }
+
+    main > div > section:first-child {
+        height: 70vh;
+        border-radius: 0 1.5rem 1.5rem 0;
+    }
+
+
+    section > p {
+        padding: 0 2.5rem 25px 5vw;
+        text-align: left;
+    }
+
+    .container-static {
+        display: flex;
+        width: 80%;
+        margin: 10vh auto auto 3.5vw;
+        justify-content: space-around;
+        text-align: left;
+    }
+
+    .container-static p {
+        font-family: 'Lexend Deca', sans-serif;
+        font-size: 1.1rem;
+    }
+
 }
