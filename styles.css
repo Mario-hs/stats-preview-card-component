@@ -45,7 +45,17 @@ main > div > section:first-child {
     height: 230px;
     background-image: url("./images/image-header-mobile.jpg");
     background-size: cover;
+    --webkit-filter: hue-rotate(200deg)
 }
+
+
+/* 
+PARTE DE FILTRO
+filter: hue-rotate(var(--primary-soft-violet, 120deg)) !;
+
+*/
+
+
 
 h1 > span {
     color: var(--primary-soft-violet);
