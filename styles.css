@@ -86,7 +86,7 @@ section img:last-child {
 }
 
 
-@media (min-width: 768px){
+@media (min-width: 508px){
     .modal {
         width: 70vw;
     }
