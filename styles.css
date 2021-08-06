@@ -133,7 +133,7 @@ section img:last-child {
         flex-direction: row-reverse;
         align-items: center;
         width: fit-content;
-        max-width: 80vw;
+        max-width: 85vw;
         margin: auto;
         border-radius: 0.5rem 0 0 0.5rem;
     }
