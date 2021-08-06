@@ -58,8 +58,9 @@ span {
 
 section img:first-child {
     width: 87vw;
-    filter: hue-rotate(120deg);
     border-radius: 0.5rem 0.5rem 0 0;
+    opacity: 0.4;
+    filter: invert(0%) sepia() saturate(380%) hue-rotate(238deg);
 }
 
 section img:last-child {
@@ -144,8 +145,9 @@ section img:last-child {
     section img:last-child {
         display: flex;
         width: 35vw;
-        border-radius: 0 0.5rem 0.5rem 0;
-        filter:hue-rotate(120deg);
+        border-radius: 0 0.5rem 0.5rem 0;  
+        opacity: 0.4;
+        filter: invert(0%) sepia() saturate(380%) hue-rotate(238deg);
     }
 
     .container {
