@@ -86,7 +86,6 @@ section img:last-child {
     letter-spacing: 1.5px;
 }
 
-
 @media (min-width: 508px){
     .modal {
         width: 70vw;
