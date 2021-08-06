@@ -87,6 +87,15 @@ section img:last-child {
 
 
 @media (min-width: 768px){
+    .modal {
+        width: 70vw;
+    }
+    section img:first-child {
+        width: 70vw;
+        height: 250px;
+        object-fit: cover;
+    }
+    
     .container-static {
         display: flex;
         justify-content: space-evenly;
@@ -122,6 +131,7 @@ section img:last-child {
     .modal {
         flex-direction: row-reverse;
         align-items: center;
+        width: fit-content;
         max-width: 80vw;
         margin: auto;
         border-radius: 0.5rem 0 0 0.5rem;
